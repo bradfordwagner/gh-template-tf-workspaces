@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Workflow
 metadata:
-  generateName: gh-template-tf-modules
+  generateName: gh-template-tf-workspaces-
 spec:
   podGC:
     strategy: OnPodSuccess # delete pods when workflow is successful
