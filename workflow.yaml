@@ -35,6 +35,12 @@ spec:
             value: sp-infra
           - name: csi_secret
             value: sp-infra
+          # name of terraform workspace
+          - name: workspace_name
+            value: default
+          # path in repository to use as entrypoint
+          - name: workspace_path
+            value: ./
         templateRef:
           name: flavor-terraform-template
           template: main
