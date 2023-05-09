@@ -1,6 +1,7 @@
-provider "azurerm" {
-  features {}
-}
+# provider "azurerm" {
+#   features {}
+# }
+
 
 # resource group for all infrastructure to be added to
 # resource "azurerm_resource_group" "rg" {
@@ -32,3 +33,8 @@ provider "azurerm" {
 #   resource_group_name = azurerm_resource_group.rg.name
 #   name                = "bradfordwagner-test1"
 # }
+
+module "hello_world" {
+  source = "git@github.com:bradfordwagner/gh-template-tf-module.git?ref=1.0.0"
+  input  = "test test"
+}

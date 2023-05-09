@@ -36,6 +36,6 @@ spec:
           - name: csi_secret
             value: sp-infra
         templateRef:
-          name: flavor-terraform-template-ddddd # TODO: remove
+          name: flavor-terraform-template
           template: main
 
