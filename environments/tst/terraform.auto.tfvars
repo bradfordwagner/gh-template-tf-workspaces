@@ -1,1 +1,1 @@
-input = "dev"
+input = "${terraform.workspace}"
