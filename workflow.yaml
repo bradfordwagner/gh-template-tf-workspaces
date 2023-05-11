@@ -45,6 +45,6 @@ spec:
           name: flavor-terraform-template
           template: main
         withItems:
-          - { name: default, path: ./ }
-          # - { name: dev, path: ./environments/dev }
+          # - { name: default, path: ./ }
+          - { name: dev, path: ./environments/dev }
 
