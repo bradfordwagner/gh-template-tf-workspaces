@@ -37,11 +37,14 @@ spec:
             value: sp-infra
           # name of terraform workspace
           - name: workspace_name
-            value: default
+            value: "{{ item.name }}"
           # path in repository to use as entrypoint
           - name: workspace_path
-            value: ./
+            value: "{{ item.path }}"
         templateRef:
           name: flavor-terraform-template
           template: main
+        withItems:
+          - { name: default, path: ./ }
+          # - { name: dev, path: ./environments/dev }
 
