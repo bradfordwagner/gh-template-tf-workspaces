@@ -3,8 +3,7 @@ terraform {
 }
 
 module "hello_world" {
-  # source = "git::https://github.com/bradfordwagner/gh-template-tf-module.git?ref=1.0.0"
-  source = "git::https://github.com/bradfordwagner/gh-template-tf-module.git?ref=${var.version}"
+  source = "git::https://github.com/bradfordwagner/gh-template-tf-module.git?ref=1.0.0"
   input  = var.input
 }
 
