@@ -1,1 +1,1 @@
-input = "${terraform.workspace}"
+input = "tst"
