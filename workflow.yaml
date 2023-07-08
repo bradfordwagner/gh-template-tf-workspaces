@@ -41,6 +41,9 @@ spec:
           # path in repository to use as entrypoint
           - name: workspace_path
             value: "{{ item.path }}"
+          # login to acr using credentials from csi
+          - name: acr_login
+            value: true
         templateRef:
           name: flavor-terraform-template
           template: main
