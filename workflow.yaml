@@ -32,9 +32,9 @@ spec:
           - name: terraform_image
             value: quay.io/bradfordwagner/terraform:1.7.1-ubuntu_focal
           - name: csi_class
-            value: sp-infra
+            value: acr-prod
           - name: csi_secret
-            value: sp-infra
+            value: acr-prod
           # name of terraform workspace
           - name: workspace_name
             value: "{{ item.name }}"
