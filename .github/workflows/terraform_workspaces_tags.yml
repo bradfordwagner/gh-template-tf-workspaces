@@ -39,12 +39,12 @@ jobs:
         uses: pnorton5432/setup-task@v1
         with:
           task-version: 3.35.1
-      - name: checkout=taskfiles@feature/terraform-workspaces
+      - name: checkout=taskfiles@main
         uses: actions/checkout@v4
         with:
           path: taskfiles
           repository: bradfordwagner/taskfiles
-          ref: feature/terraform-workspaces
+          ref: main
       - name: vault=1.16.1
         uses: cpanato/vault-installer@main
         with:
